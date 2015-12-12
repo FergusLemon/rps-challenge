@@ -2,8 +2,11 @@ class Computer
 
   attr_reader :weapon
 
-  def initialize (weapon = nil)
-    @weapon = Game::WEAPONS.sample
+  def initialize
+    @weapon = nil
   end
 
+  def choose_weapon
+    @weapon = Game::WEAPONS.sample
+  end
 end

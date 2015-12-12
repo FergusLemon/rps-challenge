@@ -5,7 +5,7 @@ class Game
 
   attr_reader :player, :computer
 
-  def initialize (player_klass = Player.new(:player1, weapon = nil), computer_klass = Computer.new(weapon = nil))
+  def initialize (player_klass = Player.new(:player1, weapon = nil), computer_klass = Computer.new)
     @player = player_klass
     @computer = computer_klass
   end

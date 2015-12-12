@@ -24,7 +24,7 @@ class RockPaperScissors < Sinatra::Base
 
   post '/selection' do
     $player1_choice = $game.player.choose_weapon(params[:weapon])
-    $computer_choice = $game.computer.weapon
+    $computer_choice = $game.computer.choose_weapon
     redirect 'result'
   end
 
